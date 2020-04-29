@@ -13,6 +13,7 @@ yarn install
 yarn build
 cordova platform add android
 cordova prepare android
+cordova build android
 cordova run android
 ```
 

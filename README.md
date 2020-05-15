@@ -9,7 +9,7 @@ cordova,vue和vant的工程模板
 ```bash
 cordova create myapp --template git+https://github.com/alvisisme/cordova-template-vant.git
 cd myapp
-mv _gitignore .gitignore
+mv gitignore .gitignore
 yarn install
 yarn build
 cordova platform add android
@@ -20,10 +20,11 @@ cordova run android
 
 ## 注意事项
 
-当前版本通过 cordova create 命令以 git+https 拉取模板时, .gitignore 文件无法被正确命名，需要在创建工程后，手动将 _gitignore 文件重命名为.gitignore。
+当前版本通过 cordova create 命令以 git+https 拉取模板时, .gitignore 文件无法被正确命名，需要在创建工程后，手动将 gitignore 文件重命名为.gitignore。
 
-见 
+此问题可能会在 cordova-create@>=3 时修复。
 
+* [cordova-app-hello-world pull-request 50](https://github.com/apache/cordova-app-hello-world/pull/50)
 * [cordova-app-hello-world issues 30](https://github.com/apache/cordova-app-hello-world/issues/30)
 * [cordova-discuss issues 69](https://github.com/apache/cordova-discuss/issues/69)
 

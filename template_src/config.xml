@@ -35,6 +35,7 @@
     <icon src="public/logo/icon.png" />
     <platform name="android">
         <hook type="before_build" src="hooks/android/before_build.js"></hook>
+        <hook type="before_prepare" src="hooks/android/before_prepare.js"></hook>
         <allow-intent href="market:*" />
     </platform>
 </widget>

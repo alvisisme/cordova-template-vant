@@ -10,8 +10,8 @@ cordova,vue和vant的工程模板
 cordova create myapp --template git+https://github.com/alvisisme/cordova-template-vant.git
 cd myapp
 mv gitignore .gitignore
-yarn install
-yarn build
+npm install
+npm run build
 cordova platform add android
 cordova prepare android
 cordova build android

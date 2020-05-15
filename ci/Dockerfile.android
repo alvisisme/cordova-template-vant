@@ -2,8 +2,9 @@ FROM alvisisme/cordova-android:9.0.0
 COPY . /template
 RUN cordova create myapp --template /template \
     && cd myapp \
-    && yarn install \
-    && yarn build \
+    && mv gitignore .gitignore \
+    && npm install \
+    && npm run build \
     && cordova platform add android \
     && cordova prepare android \
     && cordova build android

@@ -17,7 +17,7 @@ export default {
     HelloWorld,
     [Image.name]: Image
   },
-  data () {
+  data() {
     return {
       Logo
     }
